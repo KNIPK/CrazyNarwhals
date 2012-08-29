@@ -1,0 +1,17 @@
+@font-face{
+    font-family:SourceSansPro-Light;
+    src: url(./fonts/SourceSansPro-Light.otf);
+}
+
+body {
+    background-image: url(./img/bg.png);
+    background-repeat: repeat; 
+    font-family:SourceSansPro-Light,sans-serif;
+    font-size:12px;
+}
+
+div#tabbar{
+    background-image: url(./img/tabbar-bg.png);
+    width:100px;
+    position:bottom;
+}
