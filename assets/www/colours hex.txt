@@ -1,0 +1,5 @@
+orange #f7941d
+white #f7f5ea
+light gray #c2c2c2
+gray #a1a1a1
+dark gray #707070
