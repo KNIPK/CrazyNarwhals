@@ -29,6 +29,19 @@ body {
 	position: fixed;
 	width: 100%;
 }
+.img-container img {
+	width: 100%;
+}
+.benefits-list {
+	float: left;
+	width: 60%;
+}
+.benefits-list ul {
+	margin: 0;
+}
+.benefits-list h2 {
+	font-size: 15px;
+}
 .tap-bar {
 	text-align: center;
     background-image: url('./img/tabbar-bg.png');
