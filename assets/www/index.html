@@ -1,48 +1,193 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Cordova</title>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
         <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+		<link rel="stylesheet" href="jquery.mobile.min.css" />
+		<script src="jquery.js"></script>
+		<script src="jquery.mobile.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- Testing jquery mobile there -->
+		<!--
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-beta.1/jquery.mobile-1.2.0-beta.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0-beta.1/jquery.mobile-1.2.0-beta.1.min.js"></script>
+		-->
 		<script type="text/javascript" charset="utf-8">
-		    function onLoad() {
-		        document.addEventListener("deviceready", onDeviceReady, false);
-		    }
-		    function onDeviceReady() {
-				
-		    }
+			$( document ).bind( "mobileinit", function() {
+			   $(document).delegate('#kontakt div.ui-content', 'touchmove', false);
+			});
 		</script>
-        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body script="onLoad()">
-		<div class="top-bar">
-        	<h1>Działalność</h1>
-			<img src="img/header_logo.png" alt="" class="header-logo">
+		
+		
+		
+		<!-- Dzialanosc -->
+		<div id="dzialalnosc" data-role="page">
+			<div class="top-bar" data-role="header" data-shadow="false">
+				<div>
+		        	<h1>Działalność</h1>
+					<img src="img/header_logo.png" alt="" class="header-logo">
+				</div>
+			</div>
+			<div class="content" data-role="content">
+				<div class="img-container">
+					<a href="warsztaty/android.html">
+						<img src="img/projects_android_workshops.png">
+					</a>
+				</div>
+				<div class="img-container">
+					<a href="warsztaty/watchguard.html">
+						<img src="img/projects_watchguard_workshops.png">
+					</a>
+				</div>
+				<div class="img-container">
+					<a href="warsztaty/sfi.html">
+						<img src="img/projects_sfi_workshops.png">
+					</a>
+				</div>
+			</div>
+			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
+				<div>
+					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_active.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_inactive.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_inactive.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_inactive.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_inactive.png" alt=""></a>
+				</div>
+	        </div>
 		</div>
-		<div class="content">
-		<div class="img-container">
-			<a href="warsztaty/android.html">
-				<img src="img/projects_android_workshops.png">
-			</a>
+
+
+		<!-- Członkowie -->
+		<div id="czlonkowie" data-role="page">
+			<div class="top-bar" data-role="header">
+				<div>
+	        		<h1>Członkowie</h1>
+					<img src="img/header_logo.png" alt="" class="header-logo">
+				</div>
+			</div>
+			<div class="content" data-role="content">
+			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+			</div>
+			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
+				<div>
+					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_inactive.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_active.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_inactive.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_inactive.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_inactive.png" alt=""></a>
+				</div>
+	        </div>
 		</div>
-		<div class="img-container">
-			<a href="warsztaty/watchguard.html">
-				<img src="img/projects_watchguard_workshops.png">
-			</a>
+		
+		
+		
+		
+		
+		
+		<!-- Powiadomienia -->
+		<div id="powiadomienia" data-role="page">
+			<div class="top-bar" data-role="header">
+				<div>
+	        		<h1>Powiadomienia</h1>
+					<img src="img/header_logo.png" alt="" class="header-logo">
+				</div>
+			</div>
+			<div class="content" data-role="content">
+			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+			</div>
+			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
+				<div>
+					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_inactive.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_inactive.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_active.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_inactive.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_inactive.png" alt=""></a>
+				</div>
+	        </div>
 		</div>
-		<div class="img-container">
-			<a href="warsztaty/sfi.html">
-				<img src="img/projects_sfi_workshops.png">
-			</a>
+
+
+
+
+		<!-- Co zyskujesz -->
+		<div id="zysk" data-role="page">
+			<div class="top-bar" data-role="header">
+				<div>
+		        	<h1>Co zyskujesz?</h1>
+					<img src="img/header_logo.png" alt="" class="header-logo">
+				</div>
+			</div>
+			<div class="content" data-role="content">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<h2>Co mamy Ci do zaoferowania:</h2>
+						<ul>
+							<li>aaaaa</li>
+							<li>aaaaa</li>
+							<li>aaaaa</li>
+						</ul>
+					</div>
+					<div class="ui-block-b">
+						aaa
+					</div>
+				</div><!-- /grid-a -->
+			</div>
+			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
+				<div>
+					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_inactive.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_inactive.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_inactive.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_active.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_inactive.png" alt=""></a>
+				</div>
+	        </div>
 		</div>
+		
+		<!-- Kontakt -->
+		<div id="kontakt" data-role="page">
+			<div class="top-bar" data-role="header">
+				<div>
+		        	<h1>Kontakt</h1>
+					<img src="img/header_logo.png" alt="" class="header-logo">
+				</div>
+			</div>
+			<div class="content" data-role="content">
+				<img src="img/contacts_kni_logo_big.png" alt="" class="contanct-dragon-green">
+				<div class="contact-find-text">
+					Znajdziesz nas:
+				</div>
+				<div id="kontakt-images">
+					<div class="ui-grid-b">
+						<div class="ui-block-a"><img src="img/contacts_youtube_logo.png" alt=""></div>
+						<div class="ui-block-b"><img src="img/contacts_kni_logo.png" alt=""></div>
+						<div class="ui-block-c"><img src="img/contacts_facebook_logo.png" alt=""></div>
+					</div>
+					<div class="ui-grid-a">
+						<div class="ui-block-a"><img src="img/contacts_pki_logo.png" alt=""></div>
+						<div class="ui-block-b"><img src="img/contacts_fmi_logo.png" alt=""></div>	   
+					</div>
+				</div>
+			</div>
+	        <div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
+				<div>
+					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_inactive.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_inactive.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_inactive.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_inactive.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_active.png" alt=""></a>
+				</div>
+	        </div>
 		</div>
-        <div class="tap-bar">
-			<a href="index.html"><img src="img/projects_active.png" alt=""></a>
-			<a href="czlonkowie.html"><img src="img/members_inactive.png" alt=""></a>
-			<a href="powiadomienia.html"><img src="img/notifications_inactive.png" alt=""></a>
-			<a href="zysk.html"><img src="img/benefits_inactive.png" alt=""></a>
-			<a href="kontakt.html"><img src="img/contact_icon_inactive.png" alt=""></a>
-        </div>
     </body>
 </html>

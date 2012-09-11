@@ -4,15 +4,20 @@
 }
 
 body {
-    background-image: url('./img/bg.png');
-    background-repeat: repeat-y; 
-    font-family: SourceSansPro-Light, sans-serif;
     font-size: 12px;
 	margin: 0;
 	padding: 0;
 	padding-bottom: 60px;
 }
-
+.content {
+	background-image: url('./img/bg.png') !important;
+    background-repeat: repeat-y;
+}
+body * {
+	font-family: SourceSansPro-Light, sans-serif !important;
+	-webkit-box-shadow:  0 0 0 0;
+	box-shadow:  0 0 0 0;
+}
 .content {
 	padding-top: 42px;
 }
@@ -51,13 +56,94 @@ body {
 	height: 50px;
 }
 .tap-bar img {
-	width: 30px;
+	width: 9%;
+	margin: 8px 5%;
+	/*
 	margin: 5px 15px;
-	display: inline-block;
+	display: inline-block;*/
 }
 .header-logo {
 	width: 30px;
 	position: absolute;
 	top: 15px;
 	right: 5px;
+}
+
+#dzialalnosc .ui-content {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	
+}
+#kontakt .ui-content {
+	height: 100%;
+
+}
+#kontakt-images img {
+	width: 60%;
+}
+#kontakt-images .ui-block-a {
+	text-align: right;
+}
+#kontakt-images .ui-block-b {
+	text-align: center;
+}
+#kontakt-images .ui-block-c {
+	text-align: left;
+}
+#kontakt-images div.ui-grid-a img {
+	width: 40% !important;
+}
+#kontakt-images div.ui-grid-a div.ui-block-a {
+	text-align: right;
+	padding-right: 15px;
+}
+#kontakt-images div.ui-grid-a div.ui-block-b {
+	text-align: left;
+	padding-left: 15px;
+}
+img.contanct-dragon-green {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+div.contact-find-text {
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+/*Top bar shadow fix*/
+
+.ui-shadow,
+.ui-btn-up-a,
+.ui-btn-hover-a,
+.ui-btn-down-a,
+.ui-body-b,
+.ui-btn-up-b,
+.ui-btn-hover-b,
+.ui-btn-down-b,
+.ui-bar-c,
+.ui-body-c,
+.ui-btn-up-c,
+.ui-btn-hover-c,
+.ui-btn-down-c,
+.ui-bar-c,
+.ui-body-d,
+.ui-btn-up-d,
+.ui-btn-hover-d,
+.ui-btn-down-d,
+.ui-bar-d,
+.ui-body-e,
+.ui-btn-up-e,
+.ui-btn-hover-e,
+.ui-btn-down-e,
+.ui-bar-e,
+.ui-overlay-shadow,
+.ui-shadow,
+.ui-btn-active,
+.ui-body-a,
+.ui-bar-a {
+ text-shadow: none;
+ box-shadow: none;
+ -webkit-box-shadow: none;
 }
