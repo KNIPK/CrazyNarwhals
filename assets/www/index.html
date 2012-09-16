@@ -16,9 +16,19 @@
 		<script src="http://code.jquery.com/mobile/1.2.0-beta.1/jquery.mobile-1.2.0-beta.1.min.js"></script>
 		-->
 		<script type="text/javascript" charset="utf-8">
-			$( document ).bind( "mobileinit", function() {
-			   $(document).delegate('#kontakt div.ui-content', 'touchmove', false);
+			$(document).bind("pagechange", function(e,f) {
+				console.log(e);
+				if($($.mobile.activePage).attr("id") == "kontakt") {
+					$(document).bind("touchmove",function(event){
+						return true;
+				   	});
+				} else {
+					$(document).bind("touchmove",function(event){
+						return true;
+				   	});
+				}
 			});
+			
 		</script>
     </head>
     <body script="onLoad()">
@@ -35,28 +45,28 @@
 			</div>
 			<div class="content" data-role="content">
 				<div class="img-container">
-					<a href="warsztaty/android.html">
+					<a href="index.html#">
 						<img src="img/projects_android_workshops.png">
 					</a>
 				</div>
 				<div class="img-container">
-					<a href="warsztaty/watchguard.html">
+					<a href="index.html#watchguard">
 						<img src="img/projects_watchguard_workshops.png">
 					</a>
 				</div>
 				<div class="img-container">
-					<a href="warsztaty/sfi.html">
+					<a href="index.html#">
 						<img src="img/projects_sfi_workshops.png">
 					</a>
 				</div>
 			</div>
 			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
 				<div>
-					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_active.png" alt=""></a>
-					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_inactive.png" alt=""></a>
-					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_inactive.png" alt=""></a>
-					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_inactive.png" alt=""></a>
-					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_inactive.png" alt=""></a>
+					<a href="index.html#dzialalnosc" data-transition="none"><img src="img/projects_active.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="none"><img src="img/members_inactive.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="none"><img src="img/notifications_inactive.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="none"><img src="img/benefits_inactive.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="none"><img src="img/contact_icon_inactive.png" alt=""></a>
 				</div>
 	        </div>
 		</div>
@@ -78,11 +88,11 @@
 			</div>
 			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
 				<div>
-					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_inactive.png" alt=""></a>
-					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_active.png" alt=""></a>
-					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_inactive.png" alt=""></a>
-					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_inactive.png" alt=""></a>
-					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_inactive.png" alt=""></a>
+					<a href="index.html#dzialalnosc" data-transition="none"><img src="img/projects_inactive.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="none"><img src="img/members_active.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="none"><img src="img/notifications_inactive.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="none"><img src="img/benefits_inactive.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="none"><img src="img/contact_icon_inactive.png" alt=""></a>
 				</div>
 	        </div>
 		</div>
@@ -108,11 +118,11 @@
 			</div>
 			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
 				<div>
-					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_inactive.png" alt=""></a>
-					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_inactive.png" alt=""></a>
-					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_active.png" alt=""></a>
-					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_inactive.png" alt=""></a>
-					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_inactive.png" alt=""></a>
+					<a href="index.html#dzialalnosc" data-transition="none"><img src="img/projects_inactive.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="none"><img src="img/members_inactive.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="none"><img src="img/notifications_active.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="none"><img src="img/benefits_inactive.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="none"><img src="img/contact_icon_inactive.png" alt=""></a>
 				</div>
 	        </div>
 		</div>
@@ -145,11 +155,11 @@
 			</div>
 			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
 				<div>
-					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_inactive.png" alt=""></a>
-					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_inactive.png" alt=""></a>
-					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_inactive.png" alt=""></a>
-					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_active.png" alt=""></a>
-					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_inactive.png" alt=""></a>
+					<a href="index.html#dzialalnosc" data-transition="none"><img src="img/projects_inactive.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="none"><img src="img/members_inactive.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="none"><img src="img/notifications_inactive.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="none"><img src="img/benefits_active.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="none"><img src="img/contact_icon_inactive.png" alt=""></a>
 				</div>
 	        </div>
 		</div>
@@ -170,7 +180,7 @@
 				<div id="kontakt-images">
 					<div class="ui-grid-b">
 						<div class="ui-block-a"><img src="img/contacts_youtube_logo.png" alt=""></div>
-						<div class="ui-block-b"><img src="img/contacts_kni_logo.png" alt=""></div>
+						<div class="ui-block-b"><a href="http://kni.pk.edu.pl/" rel="external" target="_blank"><img src="img/contacts_kni_logo.png" alt=""></a></div>
 						<div class="ui-block-c"><img src="img/contacts_facebook_logo.png" alt=""></div>
 					</div>
 					<div class="ui-grid-a">
@@ -181,13 +191,43 @@
 			</div>
 	        <div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
 				<div>
-					<a href="index.html#dzialalnosc" data-transition="slide"><img src="img/projects_inactive.png" alt=""></a>
-					<a href="index.html#czlonkowie" data-transition="slide"><img src="img/members_inactive.png" alt=""></a>
-					<a href="index.html#powiadomienia" data-transition="slide"><img src="img/notifications_inactive.png" alt=""></a>
-					<a href="index.html#zysk" data-transition="slide"><img src="img/benefits_inactive.png" alt=""></a>
-					<a href="index.html#kontakt" data-transition="slide"><img src="img/contact_icon_active.png" alt=""></a>
+					<a href="index.html#dzialalnosc" data-transition="none"><img src="img/projects_inactive.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="none"><img src="img/members_inactive.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="none"><img src="img/notifications_inactive.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="none"><img src="img/benefits_inactive.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="none"><img src="img/contact_icon_active.png" alt=""></a>
 				</div>
 	        </div>
 		</div>
-    </body>
+    
+
+		<!-- Dzialalnosc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Watch guard-->
+		<div id="watchguard" data-role="page">
+			<div class="top-bar" data-role="header">
+				<div>
+		        	<h1>Warsztaty Watchguard</h1>
+					<img src="img/header_logo.png" alt="" class="header-logo">
+				</div>
+			</div>
+			<div class="content" data-role="content">
+				<img src="img/projects/watchguard.png" alt="" class="dzialanosc-img">
+			</div>
+	        <div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
+				<div>
+					<a href="index.html#dzialalnosc" data-transition="none"><img src="img/projects_active.png" alt=""></a>
+					<a href="index.html#czlonkowie" data-transition="none"><img src="img/members_inactive.png" alt=""></a>
+					<a href="index.html#powiadomienia" data-transition="none"><img src="img/notifications_inactive.png" alt=""></a>
+					<a href="index.html#zysk" data-transition="none"><img src="img/benefits_inactive.png" alt=""></a>
+					<a href="index.html#kontakt" data-transition="none"><img src="img/contact_icon_inactive.png" alt=""></a>
+				</div>
+	        </div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+	</body>
 </html>

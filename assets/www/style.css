@@ -34,6 +34,10 @@ body * {
 	position: fixed;
 	width: 100%;
 }
+.ui-body-c, .ui-overlay-c {
+	background-image: url('./img/bg.png') !important;
+    background-repeat: repeat-y;
+}
 .img-container img {
 	width: 100%;
 }
@@ -58,9 +62,6 @@ body * {
 .tap-bar img {
 	width: 9%;
 	margin: 8px 5%;
-	/*
-	margin: 5px 15px;
-	display: inline-block;*/
 }
 .header-logo {
 	width: 30px;
@@ -68,11 +69,19 @@ body * {
 	top: 15px;
 	right: 5px;
 }
-
-#dzialalnosc .ui-content {
+/* Likwidacja marginesów po bokach.*/
+#dzialalnosc .ui-content, #watchguard .ui-content {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
-	
+}
+ #watchguard .ui-content {
+	padding-top: 33px;
+}
+.dzialanosc-img {
+	width: 100%;
+}
+.ui-bar-a {
+	border: 0;
 }
 #kontakt .ui-content {
 	height: 100%;
