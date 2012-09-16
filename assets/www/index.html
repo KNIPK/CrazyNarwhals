@@ -8,6 +8,19 @@
 		<link rel="stylesheet" href="jquery.mobile.min.css" />
 		<script src="jquery.js"></script>
 		<script src="jquery.mobile.js"></script>
+		<script type="text/javascript" charset="utf-8" src="webintent.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			var meetingMapAddress = '0,0?q=Krakow';
+			
+		    function openGoogleMaps(address){
+				window.plugins.webintent.startActivity({
+					action: WebIntent.ACTION_VIEW,
+					url: 'geo:'+ address}, 
+					function() {}, 
+					function(e) {alert('Nie udało się otworzyć map Google. Sprawdź adres: '+address+' sam.');}
+				);					
+			}
+		</script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<!-- Testing jquery mobile there -->
 		<!--
@@ -28,7 +41,6 @@
 				   	});
 				}
 			});
-			
 		</script>
     </head>
     <body script="onLoad()">
@@ -111,10 +123,8 @@
 				</div>
 			</div>
 			<div class="content" data-role="content">
-			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
-			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
-			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
-			Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+					<h3 onclick="openGoogleMaps(meetingMapAddress);">Kliknij aby otworzyć mapę Google.</h3>
+					
 			</div>
 			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
 				<div>
