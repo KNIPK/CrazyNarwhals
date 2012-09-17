@@ -11,7 +11,17 @@
 		<script type="text/javascript" charset="utf-8" src="webintent.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			var meetingMapAddress = '0,0?q=Krakow';
+
 			
+			function onDeviceReady() {
+		    }
+			
+			function onLoad() {
+		        document.addEventListener("deviceready", onDeviceReady, false);
+		    }
+		    
+		   
+		    
 		    function openGoogleMaps(address){
 				window.plugins.webintent.startActivity({
 					action: WebIntent.ACTION_VIEW,
@@ -43,7 +53,7 @@
 			});
 		</script>
     </head>
-    <body script="onLoad()">
+    <body onLoad="onLoad();">
 		
 		
 		
@@ -232,12 +242,6 @@
 				</div>
 	        </div>
 		</div>
-		
-		
-		
-		
-		
-		
 		
 	</body>
 </html>
