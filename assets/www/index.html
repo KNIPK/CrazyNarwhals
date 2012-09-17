@@ -12,8 +12,65 @@
 		<script type="text/javascript" charset="utf-8">
 			var meetingMapAddress = '0,0?q=Krakow';
 
+			function setFileFullPathAndDownload(){
+					window.requestFileSystem(LocalFileSystem.PERSISTENT, 0,
+					getFile,
+					function(error){//requestFileSystem errorCallback
+					console.log(error);								
+					});	
+			}
+		   		    
+			function getFile(fileSystem){
+					var fileToSave = 'KNImeetingInfo.txt';
+					var sdCard = fileSystem.root;
+					sdCard.getFile(fileToSave,
+						{
+						create: true												
+						},
+						readMeetingInfo,
+						function(error){//getFile errorCallback
+							console.log(error);	
+						}											
+					);
+			}
+	
+			function readMeetingInfo(fileEntry){
+				var reader = new FileReader();
+    			reader.onloadend = function(red) {    				
+        			if(red.target.result!=''){
+        				var meeting = eval ("(" + red.target.result + ")");
+        				meetingMapAddress = meeting.mapInfo;
+        				document.getElementById('meetingPlace').innerHTML = 'Temat: '+meeting.subject+'<br> Sala: '+meeting.room+', '+ meeting.building+'<br>'+meeting.address+'<br>'+meeting.day+'.'+meeting.month+'.'+meeting.year+' godz: '+meeting.hour+':'+meeting.minutes;
+        			}
+        		};
+    			reader.readAsText(fileEntry);
+				var networkState = navigator.network.connection.type;
+				if(networkState != Connection.NONE){
+					var infoSource = new FileTransfer();
+					var uri = encodeURI('http://kni.pk.edu.pl/~mobile/crazynarwhals/spotkanie.txt');
+					infoSource.download(uri,  fileEntry.fullPath, 
+					function(){
+						reader.readAsText(fileEntry);
+						console.log('Sukces pobierania pliku o spotkaniu');
+					}, downloadFileFail);
+					
+				}
+			}
+			
+			function downloadFileSuccess(info){				
+				console.log('Sukces pobierania pliku o spotkaniu');				
+			}
+			
+			function downloadFileFail(error){
+       			console.log("download error source " + error.source);
+       			console.log("download error target " + error.target);
+       			console.log("upload error code" + error.code);
+       			console.log("http status:" + error.http_status);
+       			console.log('Bład pobierania');				
+			}
 			
 			function onDeviceReady() {
+		    	setFileFullPathAndDownload();
 		    }
 			
 			function onLoad() {
@@ -134,6 +191,8 @@
 			</div>
 			<div class="content" data-role="content">
 					<h3 onclick="openGoogleMaps(meetingMapAddress);">Kliknij aby otworzyć mapę Google.</h3>
+					Informacje o spotkaniu:
+					<div id="meetingPlace"></div>
 					
 			</div>
 			<div class="tap-bar" data-role="footer" data-id="footer" data-position="fixed">
