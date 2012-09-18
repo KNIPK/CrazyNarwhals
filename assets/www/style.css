@@ -3,6 +3,11 @@
     src: url('./font/SourceSansPro-Light.otf');
 }
 
+@font-face{
+    font-family: SourceSansPro-Semibold;
+    src: url('./font/SourceSansPro-Semibold.otf');
+}
+
 body {
     font-size: 12px;
 	margin: 0;
@@ -12,6 +17,7 @@ body {
 .content {
 	background-image: url('./img/bg.png') !important;
     background-repeat: repeat-y;
+    text-align: justify;
 }
 body * {
 	font-family: SourceSansPro-Light, sans-serif !important;
@@ -41,6 +47,8 @@ body * {
 .img-container img {
 	width: 100%;
 }
+
+
 .benefits-list {
 	float: left;
 	width: 60%;
@@ -70,10 +78,26 @@ body * {
 	right: 5px;
 }
 /* Likwidacja marginesów po bokach.*/
-#dzialalnosc .ui-content, #watchguard .ui-content {
+#dzialalnosc .ui-content, #watchguard .ui-content{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
+
+.question{
+	padding-top: 10px;
+	font-family: SourceSansPro-Semibold, sans-serif !important;
+}
+
+.memberName{
+	font-size: 26px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.memberFunction{
+	padding-top: 1px;
+	margin-top: 0px;
+}
+
  #watchguard .ui-content {
 	padding-top: 33px;
 }
