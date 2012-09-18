@@ -56,6 +56,28 @@ body * {
 .benefits-list ul {
 	margin: 0;
 }
+
+#line {
+	background-image: url('./img/members_line.png') !important;
+	background-repeat: repeat-y;
+	background-position: center;
+}
+.branch_left{
+	left: 0px;
+}
+
+.branch_right{
+	right: 0px;
+}
+
+.branch_left img{
+	width: 50%;	
+}
+
+.branch_right img{
+	width: 50%;	
+}
+
 .benefits-list h2 {
 	font-size: 15px;
 }
