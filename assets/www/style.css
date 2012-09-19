@@ -4,9 +4,8 @@
 }
 
 @font-face{
-    font-family: SourceSansPro-Bold;
-    src: url('./font/SourceSansPro-Bold.otf');
-	font-weight: bold;
+    font-family: SourceSansPro-Semibold;
+    src: url('./font/SourceSansPro-Semibold.otf');
 }
 
 body {
@@ -18,6 +17,7 @@ body {
 .content {
 	background-image: url('./img/bg.png') !important;
     background-repeat: repeat-y;
+    text-align: justify;
 }
 body * {
 	font-family: SourceSansPro-Light, sans-serif !important;
@@ -47,6 +47,8 @@ body * {
 .img-container img {
 	width: 100%;
 }
+
+
 .benefits-list {
 	float: left;
 	width: 60%;
@@ -54,6 +56,28 @@ body * {
 .benefits-list ul {
 	margin: 0;
 }
+
+#line {
+	background-image: url('./img/members_line.png') !important;
+	background-repeat: repeat-y;
+	background-position: center;
+}
+.branch_left{
+	
+}
+
+.branch_right{
+	
+}
+
+.branch_left img{
+		width: 50%;
+}
+
+.branch_right img{
+		width: 50%;
+}
+
 .benefits-list h2 {
 	font-size: 15px;
 }
@@ -64,6 +88,7 @@ body * {
     position: fixed;
 	bottom: 0;
 	height: 50px;
+	z-index: 999;
 }
 .tap-bar img {
 	width: 9%;
@@ -75,11 +100,65 @@ body * {
 	top: 15px;
 	right: 5px;
 }
+a span {
+	color: #707070;
+	text-decoration: none;
+}
+.right_branch img {
+	z-index: 0;
+}
 /* Likwidacja marginesów po bokach.*/
-#dzialalnosc .ui-content, #watchguard .ui-content {
+#dzialalnosc .ui-content, #watchguard .ui-content, #leper .ui-content, #szumiec .ui-content{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
+/* Likwidacja marginesów po bokach.*/
+#dzialalnosc .ui-content, #watchguard .ui-content, #sfi .ui-content, #android .ui-content {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+#watchguard .ui-content, #sfi .ui-content, #android .ui-content {
+	padding-top: 33px;
+}
+.branch_right a, .branch_left a {
+	font-size: 100%;
+}
+#jablonski_circle a span {
+	left: 19%;
+}
+.branch_right img { 
+	position: relative;
+	left: 50%;
+}
+.branch_left a span {
+	position: relative;
+	left: -47%;
+	bottom: 12px;
+}
+.branch_right a span {
+	position: relative;
+	left: 25%;
+	bottom: 12px;
+}
+
+.memberName {
+	font-size: 26px;
+	line-height: 80%;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.memberFunction {
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.memberDescription {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
  #watchguard .ui-content {
 	padding-top: 33px;
 }
@@ -121,37 +200,34 @@ img.contanct-dragon-green {
 	display: block;
 	margin: 0 auto;
 }
+
+img.notification-dragon-green {
+	padding-top: 10px;
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+}
+
+img.notification-map {
+	float:right;
+	border: dotted 1px gray;
+}
+
 div.contact-find-text {
 	text-align: center;
 	margin: 0 auto;
 	padding: 10px 0;
 }
-.dzialanosc-title {
-	font-size: 160%;
-	color: #fff;
-	display: block;
-	position: absolute;
-	top: 31%;
-	right: 10%;
-	text-align: right;
+
+.top-bar {
+	z-index: 9999;
 }
-.dzialanosc-content-bar {
-	width: 12%;
-	float: left;
+.right_branch img, .left_branch img {
+	z-index: 0;
 }
-.dzialanosc-content-bar img {
-	width: 30%;
-	padding-top: 70%;
-	margin-left: 30%;
-}
-.dzialanosc-content-content {
-	float: left;
-	width: 76%;
-}
-.dzialanosc-content-title {
-	font-size: 20px;
-	font-family: SourceSansPro-Bold;
-	font-weight: bold;
+
+a {
+	text-decoration: none !important;
 }
 /*Top bar shadow fix*/
 
@@ -188,3 +264,44 @@ div.contact-find-text {
  box-shadow: none;
  -webkit-box-shadow: none;
 }
+
+.dzialanosc-title {
+	font-size: 160%;
+	color: #fff;
+	display: block;
+	position: absolute;
+	top: 31%;
+	right: 10%;
+	text-align: right;
+}
+.dzialanosc-content-bar {
+	min-width: 12%;
+	float: left;
+	height: 100%;
+}
+.dzialanosc-content-bar img {
+	width: 30%;
+	padding-top: 70%;
+	margin-left: 30%;
+}
+.dzialanosc-content-content {
+	float: left;
+	width: 76%;
+}
+.ui-block-b img {
+	width: 35%;
+	display: block;
+	margin: 0 auto;
+}
+#zysk .ui-block-b { 
+	text-align: center;
+}
+.dzialanosc-content-title {
+	font-size: 20px;
+	font-family: SourceSansPro-Bold;
+	font-weight: bold;
+}
+
+
+
+
