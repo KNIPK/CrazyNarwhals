@@ -166,6 +166,19 @@ img.contanct-dragon-green {
 	display: block;
 	margin: 0 auto;
 }
+
+img.notification-dragon-green {
+	padding-top: 10px;
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+}
+
+img.notification-map {
+	float:right;
+	border: dotted 1px gray;
+}
+
 div.contact-find-text {
 	text-align: center;
 	margin: 0 auto;
