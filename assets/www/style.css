@@ -63,19 +63,19 @@ body * {
 	background-position: center;
 }
 .branch_left{
-	left: 0px;
+	
 }
 
 .branch_right{
-	right: 0px;
+	
 }
 
 .branch_left img{
-	width: 50%;	
+		width: 50%;
 }
 
 .branch_right img{
-	width: 50%;	
+		width: 50%;
 }
 
 .benefits-list h2 {
@@ -112,12 +112,10 @@ body * {
 
 .memberName{
 	font-size: 26px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
+	line-height: 80%;
 }
 .memberFunction{
-	padding-top: 1px;
-	margin-top: 0px;
+	padding-bottom: 10px;
 }
 
  #watchguard .ui-content {
