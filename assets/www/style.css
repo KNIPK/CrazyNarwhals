@@ -100,22 +100,29 @@ body * {
 	right: 5px;
 }
 /* Likwidacja marginesów po bokach.*/
-#dzialalnosc .ui-content, #watchguard .ui-content{
+#dzialalnosc .ui-content, #watchguard .ui-content, #leper .ui-content, #szumiec .ui-content{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
 
-.question{
-	padding-top: 10px;
-	font-family: SourceSansPro-Semibold, sans-serif !important;
-}
+
 
 .memberName{
 	font-size: 26px;
 	line-height: 80%;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .memberFunction{
 	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.memberDescription{
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
  #watchguard .ui-content {
