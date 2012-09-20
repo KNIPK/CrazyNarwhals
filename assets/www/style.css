@@ -77,7 +77,6 @@ body * {
 }
 
 
-
 .branch_left img{
 		width: 50%;
 		display: block;
@@ -100,6 +99,7 @@ body * {
     position: fixed;
 	bottom: 0;
 	height: 50px;
+	z-index: 999;
 }
 .tap-bar img {
 	width: 9%;
@@ -111,28 +111,61 @@ body * {
 	top: 15px;
 	right: 5px;
 }
+a span {
+	color: #707070;
+	text-decoration: none;
+}
+.right_branch img {
+	z-index: 0;
+}
 /* Likwidacja marginesów po bokach.*/
 #dzialalnosc .ui-content, #watchguard .ui-content, #leper .ui-content, #szumiec .ui-content{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
+/* Likwidacja marginesów po bokach.*/
+#dzialalnosc .ui-content, #watchguard .ui-content, #sfi .ui-content, #android .ui-content {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+#watchguard .ui-content, #sfi .ui-content, #android .ui-content {
+	padding-top: 33px;
+}
+.branch_right a, .branch_left a {
+	font-size: 100%;
+}
+#jablonski_circle a span {
+	left: 19%;
+}
+.branch_right img { 
+	position: relative;
+	left: 50%;
+}
+.branch_left a span {
+	position: relative;
+	left: -47%;
+	bottom: 12px;
+}
+.branch_right a span {
+	position: relative;
+	left: 25%;
+	bottom: 12px;
+}
 
-
-
-.memberName{
+.memberName {
 	font-size: 26px;
 	line-height: 80%;
 	padding-top: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.memberFunction{
+.memberFunction {
 	padding-bottom: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
 
-.memberDescription{
+.memberDescription {
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -197,6 +230,16 @@ div.contact-find-text {
 	padding: 10px 0;
 }
 
+.top-bar {
+	z-index: 9999;
+}
+.right_branch img, .left_branch img {
+	z-index: 0;
+}
+
+a {
+	text-decoration: none !important;
+}
 /*Top bar shadow fix*/
 
 .ui-shadow,
@@ -232,3 +275,44 @@ div.contact-find-text {
  box-shadow: none;
  -webkit-box-shadow: none;
 }
+
+.dzialanosc-title {
+	font-size: 160%;
+	color: #fff;
+	display: block;
+	position: absolute;
+	top: 31%;
+	right: 10%;
+	text-align: right;
+}
+.dzialanosc-content-bar {
+	min-width: 12%;
+	float: left;
+	height: 100%;
+}
+.dzialanosc-content-bar img {
+	width: 30%;
+	padding-top: 70%;
+	margin-left: 30%;
+}
+.dzialanosc-content-content {
+	float: left;
+	width: 76%;
+}
+.ui-block-b img {
+	width: 35%;
+	display: block;
+	margin: 0 auto;
+}
+#zysk .ui-block-b { 
+	text-align: center;
+}
+.dzialanosc-content-title {
+	font-size: 20px;
+	font-family: SourceSansPro-Bold;
+	font-weight: bold;
+}
+
+
+
+
