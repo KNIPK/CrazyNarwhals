@@ -58,36 +58,19 @@ body * {
 }
 
 #line {
-	background-image: url('./img/members_line.png') !important;
+	background-image: url('./img/members_line_new_colors.png') !important;
 	background-repeat: repeat-y;
 	background-position: center;
-}
+	
 
-#line a {
-	text-decoration: none;
-	color: gray;
-}
-
-.branch_left p{
-	text-align: left;
-}
-
-.branch_right p{
-	text-align: right;
 }
 
 
-.branch_left img{
-		width: 50%;
-		display: block;
-		margin-right: 50%;
-}
 
-.branch_right img{
-		width: 50%;
-		display: block;
-		margin-left: 50%;
-}
+
+
+
+
 
 .benefits-list h2 {
 	font-size: 15px;
@@ -115,9 +98,7 @@ a span {
 	color: #707070;
 	text-decoration: none;
 }
-.right_branch img {
-	z-index: 0;
-}
+
 /* Likwidacja marginesów po bokach.*/
 #dzialalnosc .ui-content, #watchguard .ui-content, #leper .ui-content, #szumiec .ui-content{
 	padding-left: 0 !important;
@@ -133,23 +114,42 @@ a span {
 }
 .branch_right a, .branch_left a {
 	font-size: 100%;
+	text-decoration: none;
+	color: gray;
 }
 #jablonski_circle a span {
 	left: 19%;
 }
 .branch_right img { 
+	z-index: 0;
 	position: relative;
-	left: 50%;
+	width: 50%;
+	display: block;
+	margin-left: 50%;
+	margin-right: auto;
 }
+
+.branch_left img{
+	z-index: 0;
+	position: relative;
+	width: 50%;
+	display: block;
+	margin-right: 50%;
+	margin-left: auto;
+	
+}
+
+
 .branch_left a span {
 	position: relative;
-	left: -47%;
+	left: 15%;
 	bottom: 12px;
 }
 .branch_right a span {
 	position: relative;
-	left: 25%;
+	right: 15%;
 	bottom: 12px;
+
 }
 
 .memberName {
@@ -207,6 +207,7 @@ a span {
 	padding-left: 15px;
 }
 img.contanct-dragon-green {
+	padding-top: 10px;
 	width: 90%;
 	display: block;
 	margin: 0 auto;
@@ -233,9 +234,7 @@ div.contact-find-text {
 .top-bar {
 	z-index: 9999;
 }
-.right_branch img, .left_branch img {
-	z-index: 0;
-}
+
 
 a {
 	text-decoration: none !important;
