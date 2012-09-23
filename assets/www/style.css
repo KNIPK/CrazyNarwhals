@@ -30,6 +30,11 @@ body * {
 .top-bar h1 {
 	margin-top: 15px;
 }
+
+h2 {
+	text-align: center;	
+}
+
 .top-bar {
 	height: 45px;
 	background: #f7941d;
@@ -64,13 +69,6 @@ body * {
 	
 
 }
-
-
-
-
-
-
-
 
 .benefits-list h2 {
 	font-size: 15px;
@@ -306,18 +304,38 @@ a {
 	float: left;
 	width: 76%;
 }
+
+.ui-grid-a{
+	background-color: #f7941d;
+	color: white;
+	
+}
+
 .ui-block-b img {
-	width: 35%;
+	width: 80%;
 	display: block;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
 }
 #zysk .ui-block-b { 
 	text-align: center;
+	width: 20%;
+}
+#zysk .ui-block-a { 
+	text-align: justify;
+	width: 80%;
 }
 .dzialanosc-content-title {
 	font-size: 20px;
 	font-family: SourceSansPro-Bold;
 	font-weight: bold;
+}
+
+.benefits_separator{
+	background-color: white;
+	width: 100% !important;
+	height: 5px;
 }
 
 
