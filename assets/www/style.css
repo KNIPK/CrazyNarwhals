@@ -94,6 +94,14 @@ body * {
 	top: 15px;
 	right: 5px;
 }
+
+.header-backbutton {
+	width: 25px;
+	position: absolute;
+	top: 17px;
+	left: 5px;
+}
+
 a span {
 	color: #707070;
 	text-decoration: none;
