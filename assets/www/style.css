@@ -106,7 +106,7 @@ a span {
 }
 
 /* Likwidacja marginesów po bokach.*/
-#dzialalnosc .ui-content, #watchguard .ui-content, #leper .ui-content, #szumiec .ui-content, #czlonkowie .ui-content, #zysk .ui-content{
+#dzialalnosc .ui-content, #watchguard .ui-content, #leper .ui-content, #szumiec .ui-content, #trela .ui-content, #jablonski .ui-content, #czlonkowie .ui-content, #zysk .ui-content{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
