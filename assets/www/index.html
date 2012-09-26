@@ -95,6 +95,15 @@
 					function(e) {alert('Nie udało się otworzyć map Google. Sprawdź adres: '+address+' sam.');}
 				);					
 			}
+			
+			function openBrowser(address){
+				window.plugins.webintent.startActivity({
+					action: WebIntent.ACTION_VIEW,
+					url: 'http://'+address}, 
+					function() {}, 
+					function(e) {alert('Nie udało się otworzyć przeglądarki. Odwiedź '+address+' sam.');}
+				);					
+			}
 		</script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<!-- Testing jquery mobile there -->
@@ -336,13 +345,13 @@
 				</div>
 				<div id="kontakt-images">
 					<div class="ui-grid-b">
-						<div class="ui-block-a"><img src="img/contacts_youtube_logo.png" alt=""></div>
-						<div class="ui-block-b"><a href="http://kni.pk.edu.pl/" rel="external" target="_blank"><img src="img/contacts_kni_logo.png" alt=""></a></div>
-						<div class="ui-block-c"><img src="img/contacts_facebook_logo.png" alt=""></div>
+						<div class="ui-block-a"><img onclick="openBrowser('youtube.com/channel/UCvZszr1PbPKsQzjHvUTou-g?feature=guide');" src="img/contacts_youtube_logo.png" alt=""></div>
+						<div class="ui-block-b"><img onclick="openBrowser('kni.pk.edu.pl');" src="img/contacts_kni_logo.png" alt=""></a></div>
+						<div class="ui-block-c"><img onclick="openBrowser('facebook.com/KNIPK');" src="img/contacts_facebook_logo.png" alt=""></div>
 					</div>
 					<div class="ui-grid-a">
-						<div class="ui-block-a"><img src="img/contacts_pki_logo.png" alt=""></div>
-						<div class="ui-block-b"><img src="img/contacts_fmi_logo.png" alt=""></div>	   
+						<div class="ui-block-a"><img onclick="openBrowser('pk.edu.pl');" src="img/contacts_pki_logo.png" alt=""></div>
+						<div class="ui-block-b"><img onclick="openBrowser('fmi.pk.edu.pl');" src="img/contacts_fmi_logo.png" alt=""></div>	   
 					</div>
 				</div>
 			</div>
