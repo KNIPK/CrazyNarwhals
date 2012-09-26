@@ -111,7 +111,7 @@ a span {
 	padding-right: 0 !important;
 }
 /* Likwidacja marginesów po bokach.*/
-#dzialalnosc .ui-content, #watchguard .ui-content, #sfi .ui-content, #android .ui-content {
+#dzialalnosc .ui-content, #watchguard .ui-content, #sfi .ui-content, #android .ui-content, #hannover .ui-content {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
