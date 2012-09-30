@@ -106,7 +106,7 @@ a span {
 }
 
 /* Likwidacja marginesów po bokach.*/
-#dzialalnosc .ui-content, #watchguard .ui-content, #leper .ui-content, #szumiec .ui-content, #trela .ui-content, #jablonski .ui-content, #czlonkowie .ui-content, #zysk .ui-content{
+#dzialalnosc .ui-content, #zajac .ui-content, #watchguard .ui-content, #leper .ui-content, #szumiec .ui-content, #trela .ui-content, #jablonski .ui-content, #czlonkowie .ui-content, #zysk .ui-content{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
@@ -162,13 +162,13 @@ a span {
 	font-size: 26px;
 	line-height: 80%;
 	padding-top: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 .memberFunction {
 	padding-bottom: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .memberDescription {
