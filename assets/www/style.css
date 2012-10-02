@@ -115,8 +115,8 @@ a span {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
-#watchguard .ui-content, #sfi .ui-content, #android .ui-content {
-	padding-top: 33px;
+#watchguard .ui-content, #sfi .ui-content, #android .ui-content, #hannover .ui-content {
+	padding-top: 45px;
 }
 .branch_right a, .branch_left a {
 	font-size: 100%;
