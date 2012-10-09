@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import org.apache.cordova.*;
+import pl.edu.pk.kni.crazynarwhals.R;
 
 public class MainActivity extends DroidGap {
 
